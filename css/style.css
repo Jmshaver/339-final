@@ -8,6 +8,7 @@
 }
 
 .skip a{
+  position: absolute;
   background: white;
   left: 0;
   padding: 6px;
@@ -17,7 +18,7 @@
 
 .skip{
   position: absolute;
-  top: -40px;
+  top: -100px;
 }
 
 .skip:focus, .skip:focus-within{
