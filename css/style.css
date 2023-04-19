@@ -28,14 +28,14 @@ nav {
   background-color: var(--dark-red);
   font-size: large;
 }
-header {
-  position: sticky;
-  top: 0;
-}
+
 nav > ul {
   display: flex;
   justify-content: center;
+  padding: 2rem;
+  flex-direction: column;
 }
+
 nav li {
   padding: 2rem;
 }
@@ -97,20 +97,48 @@ footer {
   padding: 2rem 0 ;
   color: var(--gold);
 }
+svg{
+  display: none;
+  vertical-align: bottom;
+}
+h2 svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+h1 svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+footer svg {
+  width: 1rem;
+  height: 1rem;
+}
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   #main {
     max-width: 600px;
     margin: auto
   }
+  nav > ul {
+    padding: 0;
+    flex-direction: row;
+  }
+  header {
+    position: sticky;
+    top: 0;
+  }
+  svg{
+    display: inline-block;
+    vertical-align: bottom;
+  }
 }
 
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1025px) {
   #main {
     max-width: none;
-    margin: auto;
     margin-left: 12rem;
     padding: 0 2rem 2rem 2rem;
   }
@@ -121,7 +149,6 @@ footer {
   nav > ul {
     flex-direction: column;
     height: 100vh;
-    
   }
   footer {
     margin-left: 12rem;
